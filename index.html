@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Password Generator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center>
+        <fieldset>
+            <legend>Choose the type of chacters the password can have</legend>
+            <div>
+                <label for="alphabet-uppercase">Capital alphabet</label><input type="checkbox" id="alphabet-uppercase">
+                <label for="alphabet">Alphabet</label> <input type="checkbox" id="alphabet">
+                <label for="numbers">Numbers</label><input type="checkbox" id="numbers">
+                <label for="symbols">Symbols</label><input type="checkbox" id="symbols">
+                <label for="password-lenght">Tamanho da senha: </label><input type="number" minlength="1" id="password-lenght">
+                <input type="button" value="Send" id="send">
+            </div>
+        </fieldset>
+        <h1><p id="p"></p></h1> <button id="copy-text" style="display: none">Copy password</button>
+    </center>
+    <script src="password.js"></script>
+</body>
+
+</html>
